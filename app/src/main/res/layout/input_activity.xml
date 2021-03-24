@@ -12,8 +12,17 @@
         android:layout_height="wrap_content"
         android:text="@string/Du_TV"
         android:textSize="@dimen/TextView">
-
     </TextView>
+
+    <EditText
+        android:id="@+id/Du_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="@dimen/TextView">
+
+    </EditText>
 
     <TextView
         android:id="@+id/wall_thickness_TV"
@@ -21,8 +30,16 @@
         android:layout_height="wrap_content"
         android:text="@string/wall_thickness_TV"
         android:textSize="@dimen/TextView">
-
     </TextView>
+
+    <EditText
+        android:id="@+id/wall_thickness_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="@dimen/TextView">
+    </EditText>
 
     <TextView
         android:id="@+id/UES_TV"
@@ -30,33 +47,67 @@
         android:layout_height="wrap_content"
         android:text="@string/UES_TV"
         android:textSize="@dimen/TextView">
-
     </TextView>
+
+    <EditText
+        android:id="@+id/UES_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="@dimen/TextView">
+    </EditText>
+
     <TextView
         android:id="@+id/depth_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/depth_TV"
         android:textSize="@dimen/TextView">
-
     </TextView>
+
+    <EditText
+        android:id="@+id/depth_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="@dimen/TextView">
+    </EditText>
+
     <TextView
         android:id="@+id/length_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/TextView"
         android:text="@string/length_TV">
-
     </TextView>
+
+    <EditText
+        android:id="@+id/length_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="@dimen/TextView">
+    </EditText>
+
     <TextView
         android:id="@+id/resistance_IP_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/TextView"
         android:text="@string/resistance_IP_TV">
-
     </TextView>
 
+    <EditText
+        android:id="@+id/resistance_IP_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="@dimen/TextView">
+    </EditText>
 
     <Button
         android:id="@+id/Calculationon_B"
