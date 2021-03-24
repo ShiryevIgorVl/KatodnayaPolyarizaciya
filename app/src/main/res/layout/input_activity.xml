@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Du_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Du_TV"
+        android:textSize="@dimen/TextView">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/wall_thickness_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wall_thickness_TV"
+        android:textSize="@dimen/TextView">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/UES_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/UES_TV"
+        android:textSize="@dimen/TextView">
+
+    </TextView>
+    <TextView
+        android:id="@+id/depth_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/depth_TV"
+        android:textSize="@dimen/TextView">
+
+    </TextView>
+    <TextView
+        android:id="@+id/length_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/TextView"
+        android:text="@string/length_TV">
+
+    </TextView>
+    <TextView
+        android:id="@+id/resistance_IP_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/TextView"
+        android:text="@string/resistance_IP_TV">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/Calculationon_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClicСalculation"
+        android:text="@string/Calculationon_B" />
+</LinearLayout>
