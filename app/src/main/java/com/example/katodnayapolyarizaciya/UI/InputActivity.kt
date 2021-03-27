@@ -21,11 +21,19 @@ class InputActivity : AppCompatActivity() {
     }
 
     fun onClicСalculation(view: View) {
-        val current :Double =
+        val current: Double = 0.0
 
         val intent = Intent(this, ActivityResult::class.java)
         intent.putExtra("Ток поляризации", current)
         startActivity(intent)
+    }
 
+    fun onClicClear(view: View) {
+        binding.DuET.text.clear()
+        binding.depthET.text.clear()
+        binding.UESET.text.clear()
+        binding.lengthET.text.clear()
+        binding.resistanceIPET.text.clear()
+        binding.wallThicknessET.text.clear()
     }
 }

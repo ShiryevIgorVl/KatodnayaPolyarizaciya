@@ -7,4 +7,5 @@
     <string name="length_TV">Длинна участка, м</string>
     <string name="resistance_IP_TV">Сопротивление изоляции, Ом*м^2</string>
     <string name="Calculationon_B">Сalculation</string>
+    <string name="clian">очистка полей</string>
 </resources>
