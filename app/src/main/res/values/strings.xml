@@ -6,6 +6,6 @@
     <string name="depth_TV">Глубина укладки трубопровода, м</string>
     <string name="length_TV">Длинна участка, м</string>
     <string name="resistance_IP_TV">Сопротивление изоляции, Ом*м^2</string>
-    <string name="Calculationon_B">Сalculation</string>
-    <string name="clian">очистка полей</string>
+    <string name="Calculationon_B">Рачет тока поляризации с смещения потенциала</string>
+    <string name="cliar">очистка полей</string>
 </resources>
