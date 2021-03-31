@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Катодная поляризация</string>
-    <string name="Du_TV">Диаметр условного прохода, мм</string>
+    <string name="Du_TV">Наружний диаметр трубопровода, мм</string>
     <string name="wall_thickness_TV">Толщина стенки трубы, мм</string>
-    <string name="UES_TV">Среднее Удельное электрическое сопротивление грунтов, Омхм</string>
+    <string name="UES_TV">Среднее удельное электрическое сопротивление грунтов, Омхм</string>
     <string name="depth_TV">Глубина укладки трубопровода, м</string>
     <string name="length_TV">Длинна участка, м</string>
     <string name="resistance_IP_TV">Сопротивление изоляции, Ом*м^2</string>
-    <string name="Calculationon_B">Рачет тока поляризации с смещения потенциала</string>
+    <string name="Calculationon_B">Рачет тока поляризации и смещения потенциала</string>
     <string name="cliar">очистка полей</string>
 </resources>

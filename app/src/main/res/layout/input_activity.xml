@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+    >
 
     <TextView
         android:id="@+id/Du_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Du_TV"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
         android:textSize="@dimen/TextView">
     </TextView>
 
@@ -21,7 +27,10 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:textAlignment="center"
-        android:textSize="@dimen/TextView">
+        android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
 
     </EditText>
 
@@ -30,7 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/wall_thickness_TV"
-        android:textSize="@dimen/TextView">
+        android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
     </TextView>
 
     <EditText
@@ -39,7 +51,10 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:textAlignment="center"
-        android:textSize="@dimen/TextView">
+        android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
     </EditText>
 
     <TextView
@@ -47,7 +62,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/UES_TV"
-        android:textSize="@dimen/TextView">
+        android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
     </TextView>
 
     <EditText
@@ -56,7 +74,10 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:textAlignment="center"
-        android:textSize="@dimen/TextView">
+        android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
     </EditText>
 
     <TextView
@@ -64,14 +85,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/depth_TV"
-        android:textSize="@dimen/TextView">
+        android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
     </TextView>
 
     <EditText
         android:id="@+id/depth_ET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="@dimen/TextView">
     </EditText>
@@ -81,7 +105,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/TextView"
-        android:text="@string/length_TV">
+        android:text="@string/length_TV"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
     </TextView>
 
     <EditText
@@ -98,7 +125,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/TextView"
-        android:text="@string/resistance_IP_TV">
+        android:text="@string/resistance_IP_TV"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
     </TextView>
 
     <EditText
@@ -115,12 +145,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClicСalculation"
-        android:text="@string/Calculationon_B" />
+        android:text="@string/Calculationon_B"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        />
 
     <Button
         android:id="@+id/cliar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClicClear"
-        android:text="@string/cliar" />
+        android:text="@string/cliar"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        />
+
+
 </LinearLayout>
+</ScrollView>
