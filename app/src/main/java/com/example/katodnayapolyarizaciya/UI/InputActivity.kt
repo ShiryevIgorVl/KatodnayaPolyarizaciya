@@ -4,12 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.katodnayapolyarizaciya.Constans.Constans
 import com.example.katodnayapolyarizaciya.Logic.Logic
 import com.example.katodnayapolyarizaciya.databinding.InputActivityBinding
 
 class InputActivity : AppCompatActivity() {
 
     private lateinit var binding: InputActivityBinding
+    private val constans = Constans
 
     var du = 0.0 // Диаметр трубопровода, мм
     var wallThickness = 0.0 //Толщина стенки трубы, мм
@@ -30,7 +32,6 @@ class InputActivity : AppCompatActivity() {
     fun onClicСalculation(view: View) {
 
         val logic = Logic()
-        val current: Double = 0.0
 
         du = binding.DuET.text.toString().toDouble() // Диаметр трубопровода, мм
         wallThickness =
@@ -40,9 +41,18 @@ class InputActivity : AppCompatActivity() {
         lEngth = binding.lengthET.text.toString().toDouble() //длинна участка, м
         resistanceIP = binding.resistanceIPET.text.toString().toDouble() //сопротивление ИП, м
 
+        val rT = logic.longitudinalResistanceOfSteelPipe(du, wallThickness)
+        val rR = logic.pipelineSpreadingResistance(UES, du, depth, rT)
+        val Z = logic.characteristicResistanceOfPipeline(rT, rR, resistanceIP, du)
+        val Al = logic.currentPropagationConstant(du, rT, rR, resistanceIP)
+        val Utz = logic.potentialOffset(lEngth, resistanceIP, rR)
+        val I = logic.current(lEngth, du, resistanceIP, Utz, Z, Al, rR)
 
         val intent = Intent(this, ActivityResult::class.java)
-        intent.putExtra("Ток поляризации", current)
+        intent.putExtra(constans.I, I.toString())
+        intent.putExtra(constans.RR, rR.toString())
+        intent.putExtra(constans.RT, rT.toString())
+        intent.putExtra(constans.UTZ, Utz.toString())
 
         startActivity(intent)
     }
