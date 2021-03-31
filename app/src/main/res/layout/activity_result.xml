@@ -11,7 +11,10 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textAlignment="center"
-        android:textSize="@dimen/TextView">
+        android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
 
     </TextView>
 
@@ -22,6 +25,8 @@
         android:gravity="center"
         android:textAlignment="center"
         android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
         >
 
     </TextView>
@@ -33,6 +38,8 @@
         android:gravity="center"
         android:textAlignment="center"
         android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
         >
 
     </TextView>
@@ -44,6 +51,32 @@
         android:gravity="center"
         android:textAlignment="center"
         android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/Z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/Al"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="@dimen/TextView"
+        android:layout_marginEnd="@dimen/TV_margin"
+        android:layout_marginStart="@dimen/TV_margin"
         >
 
     </TextView>

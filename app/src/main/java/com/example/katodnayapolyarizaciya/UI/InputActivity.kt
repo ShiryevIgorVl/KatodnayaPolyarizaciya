@@ -4,14 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.katodnayapolyarizaciya.Constans.Constans
+import com.example.katodnayapolyarizaciya.Constans.Constants
 import com.example.katodnayapolyarizaciya.Logic.Logic
 import com.example.katodnayapolyarizaciya.databinding.InputActivityBinding
 
 class InputActivity : AppCompatActivity() {
 
     private lateinit var binding: InputActivityBinding
-    private val constans = Constans
+    private val constants = Constants
 
     var du = 0.0 // Диаметр трубопровода, мм
     var wallThickness = 0.0 //Толщина стенки трубы, мм
@@ -49,10 +49,12 @@ class InputActivity : AppCompatActivity() {
         val I = logic.current(lEngth, du, resistanceIP, Utz, Z, Al, rR)
 
         val intent = Intent(this, ActivityResult::class.java)
-        intent.putExtra(constans.I, I.toString())
-        intent.putExtra(constans.RR, rR.toString())
-        intent.putExtra(constans.RT, rT.toString())
-        intent.putExtra(constans.UTZ, Utz.toString())
+        intent.putExtra(constants.I, I.toString())
+        intent.putExtra(constants.RR, rR.toString())
+        intent.putExtra(constants.RT, rT.toString())
+        intent.putExtra(constants.UTZ, Utz.toString())
+        intent.putExtra(constants.Z, Z.toString())
+        intent.putExtra(constants.Al, Al.toString())
 
         startActivity(intent)
     }

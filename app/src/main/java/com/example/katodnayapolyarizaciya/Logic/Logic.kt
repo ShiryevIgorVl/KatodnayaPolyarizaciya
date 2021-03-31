@@ -1,14 +1,11 @@
 package com.example.katodnayapolyarizaciya.Logic
 
-import android.util.Log
 import android.util.Log.d
-import android.view.View
-import com.example.katodnayapolyarizaciya.Constans.Constans
-import com.example.katodnayapolyarizaciya.UI.InputActivity
+import com.example.katodnayapolyarizaciya.Constans.Constants
 import kotlin.math.*
 
 class Logic {
-    private val constans = Constans
+    private val constans = Constants
 
     //Продольное сопротивление стального трубопровода Rт , Ом/м
     fun longitudinalResistanceOfSteelPipe(du: Double, wallThickness: Double): Double {
